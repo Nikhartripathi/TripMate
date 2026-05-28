@@ -138,7 +138,7 @@ TripMate/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/tripmate.git
+https://github.com/Nikhartripathi/TripMate.git
 ```
 
 ---
