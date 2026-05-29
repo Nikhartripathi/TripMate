@@ -61,27 +61,6 @@ TripMate focuses on combining **beautiful UI/UX** with practical travel planning
 
 ---
 
-# 📸 Screenshots
-
-## 🏠 Dashboard Preview
-
-<p align="center">
-  <img src="./app_dashboard.png" alt="Dashboard Preview" width="100%">
-</p>
-
-![Home Dashboard](./screenshots/dashboard.png)
-🗺️ Travel Itinerary Section
-
-(Shows timeline and trip schedule)
-
-![Itinerary Page](./screenshots/itinerary.png)
-🏨 Hotel Recommendations
-
-
-📱 Mobile Responsive View
-![Mobile View](./screenshots/mobile.png)
----
-
 # 🛠️ Tech Stack
 
 ## Frontend
