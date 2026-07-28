@@ -7,28 +7,30 @@ const { sendTokenResponse } = require('../utils/jwt')
 // @access  Public
 const register = async (req, res, next) => {
   try {
-    const { name, email, phone, password } = req.body
+    const { name, email, phone, password } = req.body;
 
-    if (!name || !email || !password) {
-      return res.status(400).json({ success: false, message: 'Name, email, and password are required.' })
-    }
+    console.log("STEP 1");
 
-    const existing = await User.findOne({ email })
-    if (existing) {
-      return res.status(400).json({ success: false, message: 'An account with this email already exists.' })
-    }
+    const user = new User({
+      name,
+      email,
+      phone,
+      password,
+    });
 
-    const user = await User.create({ name, email, phone: phone || '', password })
+    console.log("STEP 2");
 
-    // Create an empty wishlist for the new user
-    await Wishlist.create({ user: user._id, hotels: [], destinations: [] })
+    await user.save();
 
-    sendTokenResponse(user, 201, res)
+    console.log("STEP 3");
+
+    sendTokenResponse(user, 201, res);
+
   } catch (err) {
-    next(err)
+    console.log(err);
+    next(err);
   }
-}
-
+};
 // @desc    Login user
 // @route   POST /api/auth/login
 // @access  Public
