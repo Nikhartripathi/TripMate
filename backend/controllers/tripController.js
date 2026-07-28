@@ -1,6 +1,6 @@
 const Trip = require('../models/Trip')
 const User = require('../models/User')
-const { generateItinerary } = require('../utils/itineraryGenerator')
+const { generateItinerary } = require('../utils/ItineraryGenerator')
 
 // @desc    Create a new trip
 // @route   POST /api/trips
