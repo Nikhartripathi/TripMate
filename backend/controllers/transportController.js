@@ -1,4 +1,4 @@
-const { getTransportOptions } = require('../utils/transportGenerator')
+const { getTransportOptions } = require('../utils/TransportGenerator')
 
 // @desc    Get transport options between two cities
 // @route   GET /api/transport?from=Delhi&to=Mumbai
